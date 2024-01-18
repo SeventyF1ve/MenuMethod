@@ -29,12 +29,12 @@ public class CosmeticData {
 
             if(meta.hasDisplayName()){
                 String displayName = meta.getDisplayName();
-                meta.setDisplayName(PlaceholderAPI.setPlaceholders(player, displayName));
+                meta.setDisplayName(displayName);
             }
 
             if(meta.hasLore()){
                 List<String> description = meta.getLore();
-                meta.setLore(PlaceholderAPI.setPlaceholders(player, description));
+                meta.setLore(description);
             }
             item.setItemMeta(meta);
         }
